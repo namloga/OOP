@@ -112,7 +112,7 @@ namespace Tests
             Assert.Contains("Нужно ещё:", s.ToString());
         }
 
-        // 5) Refund - Deposited
+        // Refund - Deposited
         [Fact]
         public void Refund_AfterDeposit_ReturnAndAsksForMoney()
         {
@@ -145,7 +145,7 @@ namespace Tests
             Assert.Contains("ПОЖАЛУЙСТА, ВНЕСИТЕ ДЕНЬГИ", sFlow.ToString());
         }
 
-        // 6) Refund - no add 
+        // Refund - no add 
         [Fact]
         public void Refund_NoMoney_ResultNoMoneyMessage()
         {
@@ -163,7 +163,7 @@ namespace Tests
             Assert.Contains("Нет денег для возврата", s.ToString());
         }
 
-        // 7) Admin - password is wrong 
+        // Admin - password is wrong 
         [Fact]
         public void AdminMode_WrongPassword_ShowsError()
         {
@@ -184,7 +184,7 @@ namespace Tests
             Assert.Contains("Неверный пароль", s.ToString());
         }
 
-        // 8) AdminMode restock - increases quantity 
+        // AdminMode restock - increases quantity 
         [Fact]
         public void AdminMode_Restock_PrintsAddQuantity()
         {
@@ -214,7 +214,7 @@ namespace Tests
             Assert.Contains("Новый остаток: 15 шт.", output);
         }
 
-        // 9) AdminMode collect - after a purchase, admin collects money 
+        // AdminMode collect - after a purchase, admin collects money 
         [Fact]
         public void AdminMode_Collect_PrintsCollectedAmount()
         {
